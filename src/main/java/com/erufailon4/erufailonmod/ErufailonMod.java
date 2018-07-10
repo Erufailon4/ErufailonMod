@@ -12,7 +12,7 @@ public class ErufailonMod {
 
     public static final String MODID = "erufailonmod";
     public static final String NAME = "ErufailonMod";
-    public static final String VERSION = "0.1.0";
+    public static final String VERSION = "0.1.0.001";
 
     @Mod.Instance(MODID)
     public static ErufailonMod instance;
