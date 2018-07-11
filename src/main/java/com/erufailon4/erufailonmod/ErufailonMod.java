@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import com.erufailon4.erufailonmod.item.ModItems;
 import com.erufailon4.erufailonmod.proxy.CommonProxy;
 
 @Mod(modid = ErufailonMod.MODID, name = ErufailonMod.NAME, version = ErufailonMod.VERSION)
