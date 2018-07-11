@@ -1,10 +1,13 @@
 package com.erufailon4.erufailonmod;
 
+import net.minecraft.item.Item;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import com.erufailon4.erufailonmod.proxy.CommonProxy;
 
 @Mod(modid = ErufailonMod.MODID, name = ErufailonMod.NAME, version = ErufailonMod.VERSION)
@@ -32,6 +35,16 @@ public class ErufailonMod {
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+
+    }
+
+    @Mod.EventBusSubscriber
+    public static class RegistrationHandler {
+
+        @SubscribeEvent
+        public static void registerItems(RegistryEvent.Register<Item> event) {
+            ModItems.register(event.getRegistry());
+        }
 
     }
 
